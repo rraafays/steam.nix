@@ -23,9 +23,10 @@
   };
 
   environment = {
-    systemPackages = [
-      pkgs.mangohud
-      pkgs.gamescope
+    systemPackages = with pkgs; [
+      mangohud
+      gamescope
+      er-patcher
     ];
   };
 }
