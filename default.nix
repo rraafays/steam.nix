@@ -8,7 +8,6 @@
     package = pkgs.steam.override {
       extraEnv = {
         SDL_VIDEODRIVER = "windows";
-        HOST_LC_ALL = "${pkgs.coreutils}/bin/echo $LANG";
         ENABLE_VKBASALT = 0;
         PROTON_HIDE_NVIDIA_GPU = 0;
         PROTON_ENABLE_NVAPI = 1;
